@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+html, body, #root {
+	height: 100%;
+}
+
+body {
+	@apply bg-neutral-950 text-neutral-100 antialiased;
+	font-family: 'Rajdhani', ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+:root {
+	--f1-red: #e10600;
+	--f1-amber: #ffb800;
+	--f1-cyan: #00d2ff;
+}
+
+.card {
+	@apply bg-neutral-900 rounded-xl border border-neutral-800 shadow-sm;
+	box-shadow: 0 0 0 1px rgba(255,255,255,0.02), 0 8px 24px rgba(0,0,0,0.45);
+}
+
+.btn {
+	@apply inline-flex items-center justify-center rounded-md px-3 py-2 text-sm font-medium text-white transition;
+	background: linear-gradient(90deg, var(--f1-red), #ef4444);
+	box-shadow: 0 0 0 1px rgba(239,68,68,0.2), 0 8px 18px rgba(225,6,0,0.35);
+}
+
+.btn-outline {
+	@apply inline-flex items-center justify-center rounded-md px-3 py-2 text-sm font-medium border border-neutral-700 text-neutral-200 hover:border-neutral-500 transition;
+}
+
+.futuristic {
+	font-family: 'Orbitron', 'Rajdhani', ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+h1, h2, h3, h4 {
+	font-family: 'Orbitron', 'Rajdhani', ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+.accent-bar {
+	background: linear-gradient(90deg, var(--f1-red), var(--f1-amber), transparent);
+	height: 2px;
+	border-radius: 9999px;
+}
